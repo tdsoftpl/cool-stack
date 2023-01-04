@@ -1,0 +1,2 @@
+/* Components */
+export * from "./Avatar";

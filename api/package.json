@@ -1,0 +1,41 @@
+{
+  "name": "@cool-stack/api",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "./types/index.ts",
+  "types": "./types/index.ts",
+  "scripts": {
+    "dev:local": "cross-env-shell CONFIG_PATH=.env.local sh ./develop.sh",
+    "start": "directus start",
+    "get:schema": "cross-env CONFIG_PATH=.env.local directus schema snapshot --yes ./schema.yaml",
+    "dev:local:db": "docker compose -f docker-compose.local.yml up -d",
+    "stop:local:db": "docker rm $(docker stop coolstack_db)",
+    "seed:local:db": "rimraf seeds/build && tsc seeds/*.ts --outDir seeds/build --skipLibCheck && knex seed:run",
+    "lint": "cross-env TIMING=1 eslint 'types/**/*.{js,jsx,ts,tsx}'",
+    "docker:build": "docker build -t cool-stack-api .",
+    "docker:run": "docker run -p 8000:8000 --name cool-stack-api cool-stack-api",
+    "docker:stop": "docker rm $(docker stop cool-stack-api)"
+  },
+  "dependencies": {
+    "directus": "9.22.1",
+    "mysql": "2.18.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.46.1",
+    "@typescript-eslint/parser": "5.46.1",
+    "cross-env": "7.0.3",
+    "dotenv": "16.0.3",
+    "eslint": "8.29.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-unicorn": "45.0.2",
+    "open-cli": "7.1.0",
+    "prettier": "2.8.1",
+    "rimraf": "3.0.2",
+    "typescript": "4.9.4"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

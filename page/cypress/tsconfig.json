@@ -1,0 +1,26 @@
+{
+  "extends": "@cool-stack/configs/tsconfig/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "types": ["node", "cypress", "@testing-library/cypress"],
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "target": "ES2019",
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+  },
+  "include": [
+      "e2e/**/*",
+      "support/**/*",
+      "../node_modules/cypress",
+      "../node_modules/@testing-library/cypress"
+    ],
+    "exclude": [
+      "../node_modules/@types/jest",
+      "../node_modules/@testing-library/jest-dom"
+    ]
+}

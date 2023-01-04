@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  mysql:
+    container_name: coolstack_db
+    image: mysql:8
+    # https://dev.mysql.com/doc/refman/8.0/en/mysql-acid.html
+    # https://dev.mysql.com/doc/refman/8.0/en/innodb-parameters.html#sysvar_innodb_flush_method
+    # nosync only for unix, edit for local start on other systems
+    command: --default-authentication-plugin=mysql_native_password --sync_binlog=0 --innodb_doublewrite=OFF  --innodb-flush-log-at-trx-commit=0 --innodb-flush-method=nosync
+    ports:
+      - '3306:3306'
+    env_file:
+      - .env.local
+    healthcheck:
+      test: ["CMD", 'mysqladmin', 'ping', '-h', 'localhost', '-u', 'root', '-p$$MYSQL_ROOT_PASSWORD']
+      timeout: 5s
+      retries: 10
