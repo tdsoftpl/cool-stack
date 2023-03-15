@@ -1,4 +1,4 @@
-modules.exports = {
+module.exports = {
     plugins: ["prettier"],
     extends: [
         "eslint:recommended",
