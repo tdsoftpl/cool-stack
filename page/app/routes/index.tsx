@@ -12,8 +12,8 @@ interface LoaderData {
 
 export const loader: LoaderFunction = async () => {
     const articles = await $api.items(Collection.Articles).readByQuery({
-        sort: ["-publish_date"],
-        limit: 3
+        sort: ["-date_created"],
+        limit: 10
     });
 
     return json<LoaderData>({
@@ -35,11 +35,12 @@ export default function Index() {
                                 Articles from Directus
                             </h2>
                             <p className="mt-4 text-base text-gray-400">
-                                The section should show three articles that are fetched from
-                                Directus. If you don&lsquo;t see them on the homepage after
-                                bootstrapping the project, your local Directus instance may not work
-                                correctly. Go back to the READ.ME and check if you have followed all
-                                the required steps.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a type specimen book. It has survived not
+                                only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged.
                             </p>
                         </div>
                     </div>
@@ -48,19 +49,16 @@ export default function Index() {
                             {articles.map((article) => (
                                 <div key={article.id}>
                                     <p className="text-sm text-gray-400">
-                                        {new Date(article.publish_date).toLocaleDateString("en-US")}
+                                        {new Date(
+                                            article.date_updated || article.date_created
+                                        ).toLocaleDateString("en-US")}
                                     </p>
                                     <Link to={`/blog/${article.slug}`} className="group mt-2 block">
                                         <p className="text-xl font-semibold text-gray-900">
                                             {article.title}
                                         </p>
-                                        {article.summary && (
-                                            <p className="text-base text-gray-500">
-                                                {article.summary}
-                                            </p>
-                                        )}
-                                        <p className="mt-2 text-base font-semibold text-purple-600 group-hover:text-purple-500">
-                                            Read full story
+                                        <p className="mt-2 text-base font-semibold text-sky-600 group-hover:text-sky-500">
+                                            Read full
                                         </p>
                                     </Link>
                                 </div>

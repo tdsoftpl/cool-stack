@@ -1,13 +1,12 @@
 import React from "react";
 import invariant from "tiny-invariant";
-import {$api} from "~/api";
 import {useLoaderData} from "@remix-run/react";
 import {json} from "@remix-run/node";
+import type {LoaderFunction} from "@remix-run/node";
 import {Collection, isArticle, isUser, Status} from "@cool-stack/api";
 import type {Article, User} from "@cool-stack/api";
-import type {LoaderFunction} from "@remix-run/node";
-
 import {Avatar} from "@cool-stack/ui";
+import {$api} from "~/api";
 
 interface LoaderData {
     article: Article & {author: User};
@@ -15,7 +14,7 @@ interface LoaderData {
 
 export const loader: LoaderFunction = async ({params}) => {
     const articleResponse = await $api.items(Collection.Articles).readByQuery({
-        fields: ["*", "author.*" as "author"],
+        fields: ["*", "author.id" as "author", "author.email" as "author"],
         filter: {
             status: {
                 _eq: Status.Published
@@ -49,31 +48,28 @@ export default function ArticlePost() {
             <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-6 lg:py-8 lg:px-8">
                 <div className="flex flex-col">
                     <p className="text-base font-normal leading-6 text-gray-400">
-                        {new Date(article.publish_date).toLocaleDateString("en-US")}
+                        {new Date(article.date_updated || article.date_created).toLocaleDateString(
+                            "en-US"
+                        )}
                     </p>
                     <h1 className="mt-5 text-4xl font-extrabold leading-10 text-gray-900">
                         {article.title}
                     </h1>
 
                     <div className="mt-6 flex items-center gap-3">
-                        <Avatar
-                            nickname={`${article.author.first_name} ${article.author.last_name}`}
-                            src={article.author.avatar}
-                        />
+                        <Avatar nickname={article.author.email.split("@")[0]} />
                         <div className="flex flex-col">
                             <span className="text-base font-medium leading-6 text-gray-900">
-                                {article.author.first_name} {article.author.last_name}
+                                {article.author.email}
                             </span>
                         </div>
                     </div>
                 </div>
 
-                {article.body && (
-                    <div
-                        className="mt-8 max-w-none"
-                        dangerouslySetInnerHTML={{__html: article.body}}
-                    />
-                )}
+                <div
+                    className="prose mt-8 max-w-none"
+                    dangerouslySetInnerHTML={{__html: article.content}}
+                />
             </div>
         </div>
     );

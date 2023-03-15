@@ -1,28 +1,8 @@
 import React from "react";
-import {
-    Links,
-    LiveReload,
-    Meta,
-    Outlet,
-    Scripts,
-    ScrollRestoration,
-    useLoaderData
-} from "@remix-run/react";
-import {json} from "@remix-run/node";
-import type {MetaFunction, LinksFunction, LoaderFunction} from "@remix-run/node";
+import {Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration} from "@remix-run/react";
+import type {MetaFunction, LinksFunction} from "@remix-run/node";
 
-import packageJson from "../../package.json";
 import tailwindStylesheetUrl from "./styles/style.css";
-
-interface LoaderData {
-    version: typeof packageJson.version;
-}
-
-export const loader: LoaderFunction = async () => {
-    return json<LoaderData>({
-        version: packageJson.version
-    });
-};
 
 export const meta: MetaFunction = () => ({
     charset: "utf-8",
@@ -38,8 +18,6 @@ export const links: LinksFunction = () => {
 };
 
 const App = () => {
-    const {version} = useLoaderData<LoaderData>();
-
     return (
         <html lang="en">
             <head>
@@ -56,26 +34,25 @@ const App = () => {
                                 <div className="absolute inset-0">
                                     <img
                                         className="h-full w-full object-cover blur-sm"
-                                        src="/_static/images/cool-stack-cover-image.png"
-                                        alt="Cool-Stack cover image"
+                                        src="/_static/images/cool-stack-cover.png"
+                                        alt="Cool-Stack Cover Image"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-b from-pink-400 to-fuchsia-900 mix-blend-multiply" />
+                                    <div className="absolute inset-0 bg-gradient-to-b from-sky-400 to-sky-900 mix-blend-multiply" />
                                 </div>
                                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                                     <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                                        <span className="block text-white">🧊 Cool-Stack</span>
-                                        <span className="block text-purple-300">
+                                        <span className="block text-white">Cool-Stack 🧊</span>
+                                        <span className="block text-sky-300">
                                             template repository
                                         </span>
                                     </h1>
-                                    <p className="mx-auto mt-6 max-w-lg text-center text-xl text-purple-100 sm:max-w-xl">
-                                        Develop amazing projects using the newest technology stack
-                                        with{" "}
+                                    <p className="mx-auto mt-6 max-w-lg text-center text-xl text-sky-100 sm:max-w-xl">
+                                        Develop your next page using{" "}
                                         <a
                                             target="_blank"
                                             rel="noreferrer"
                                             href="https://remix.run/"
-                                            className="cursor-pointer text-purple-400 hover:underline"
+                                            className="cursor-pointer text-sky-400 hover:underline"
                                         >
                                             Remix.run
                                         </a>
@@ -84,7 +61,7 @@ const App = () => {
                                             target="_blank"
                                             rel="noreferrer"
                                             href="https://directus.io/"
-                                            className="cursor-pointer text-purple-400 hover:underline"
+                                            className="cursor-pointer text-sky-400 hover:underline"
                                         >
                                             Directus.io
                                         </a>
@@ -99,16 +76,6 @@ const App = () => {
                 <ScrollRestoration />
                 <Scripts />
                 <LiveReload port={3334} />
-
-                {/* Footer */}
-                <footer className="bg-gray-800">
-                    <div className="mx-auto max-w-7xl py-6 px-2 sm:px-3 md:flex md:items-center md:justify-center lg:px-4">
-                        <p className="mt-0 text-center text-base text-white md:mt-4">
-                            <span>{new Date().getFullYear()} Cool-Stack template repository </span>
-                            <span title="Version">v{version}</span>
-                        </p>
-                    </div>
-                </footer>
             </body>
         </html>
     );
