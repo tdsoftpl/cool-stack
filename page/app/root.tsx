@@ -1,6 +1,15 @@
 import React from "react";
-import {Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration} from "@remix-run/react";
-import type {MetaFunction, LinksFunction} from "@remix-run/node";
+import {
+    Links,
+    LiveReload,
+    Meta,
+    Outlet,
+    Scripts,
+    ScrollRestoration,
+    useCatch
+} from "@remix-run/react";
+import type {MetaFunction, LinksFunction, ErrorBoundaryComponent} from "@remix-run/node";
+import type {CatchBoundaryComponent} from "@remix-run/react/dist/routeModules";
 
 import tailwindStylesheetUrl from "./styles/style.css";
 
@@ -76,6 +85,45 @@ const App = () => {
                 <ScrollRestoration />
                 <Scripts />
                 <LiveReload port={3334} />
+            </body>
+        </html>
+    );
+};
+
+export const CatchBoundary: CatchBoundaryComponent = () => {
+    const caught = useCatch();
+
+    return (
+        <html>
+            <head>
+                <title>Oops!</title>
+                <Meta />
+                <Links />
+            </head>
+            <body className="flex min-h-screen w-screen justify-center p-8">
+                <span>
+                    CatchBoundary: <code className="bg-red-100 p-2">{caught.data}</code>
+                </span>
+                <Scripts />
+            </body>
+        </html>
+    );
+};
+
+export const ErrorBoundary: ErrorBoundaryComponent = ({error}) => {
+    return (
+        <html>
+            <head>
+                <title>Oh no! Something went wrong...</title>
+                <Meta />
+                <Links />
+                <meta httpEquiv="refresh" content="5" />
+            </head>
+            <body className="flex min-h-screen w-screen justify-center p-8">
+                <span>
+                    ErrorBoundary: <code className="bg-red-100 p-2">{error.toString()}</code>
+                </span>
+                <Scripts />
             </body>
         </html>
     );

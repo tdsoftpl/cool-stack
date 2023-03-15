@@ -6,7 +6,7 @@
   "sideEffects": false,
   "scripts": {
     "dev": "concurrently \"yarn run dev:remix\" \"yarn run dev:arc\" \"yarn run dev:css\"",
-    "dev:remix": "open-cli http://localhost:3333 && remix build && remix watch",
+    "dev:remix": "remix build && open-cli http://localhost:3333 && remix watch",
     "dev:arc": "arc sandbox",
     "dev:css": "yarn generate:css --watch",
     "generate:css": "tailwindcss -i ../packages/ui/src/global.css -o ./app/styles/style.css --minify",
