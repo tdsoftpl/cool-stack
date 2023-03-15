@@ -1,12 +1,12 @@
 #!/bin/bash
 
 yarn run stop:local:db
-yarn run dev:local:db
+yarn run start:local:db
 
 echo "Waiting for the database to be ready ⏳"
 
 # shellcheck disable=SC2046
-while [ $(docker inspect --format "{{json .State.Health.Status }}" "coolstack_db") != "\"healthy\"" ];
+while [ $(docker inspect --format "{{json .State.Health.Status }}" "coolstack_postgres") != "\"healthy\"" ];
 do printf "💤"; sleep 1;
 done
 

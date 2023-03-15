@@ -1,5 +1,6 @@
 version: 1
-directus: 9.22.1
+directus: 9.23.1
+vendor: postgres
 collections:
   - collection: articles
     meta:
@@ -9,27 +10,24 @@ collections:
       archive_value: archived
       collapse: open
       collection: articles
-      color: '#6644FF'
-      display_template: '{{status}}'
+      color: null
+      display_template: null
       group: null
       hidden: false
       icon: article
       item_duplication_fields: null
-      note: Blog post articles written by our team
+      note: null
       singleton: false
       sort: null
       sort_field: null
       translations: null
       unarchive_value: draft
     schema:
-      collation: utf8mb4_0900_ai_ci
-      comment: ''
-      engine: InnoDB
       name: articles
-      schema: coolstack_dev
 fields:
   - collection: articles
     field: author
+    type: uuid
     meta:
       collection: articles
       conditions: null
@@ -41,8 +39,8 @@ fields:
       interface: select-dropdown-m2o
       note: null
       options:
-        template: '{{avatar.$thumbnail}}{{first_name}}{{last_name}}'
-      readonly: true
+        enableCreate: false
+      readonly: false
       required: false
       sort: null
       special:
@@ -50,33 +48,32 @@ fields:
       translations: null
       validation: null
       validation_message: null
-      width: half
+      width: full
     schema:
-      comment: ''
-      data_type: char
-      default_value: null
-      foreign_key_column: id
-      foreign_key_table: directus_users
-      generation_expression: null
-      has_auto_increment: false
-      is_generated: false
-      is_nullable: true
-      is_primary_key: false
-      is_unique: false
-      max_length: 36
       name: author
+      table: articles
+      data_type: uuid
+      default_value: null
+      max_length: null
       numeric_precision: null
       numeric_scale: null
-      table: articles
-    type: string
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
   - collection: articles
-    field: body
+    field: content
+    type: text
     meta:
       collection: articles
       conditions: null
       display: null
       display_options: null
-      field: body
+      field: content
       group: null
       hidden: false
       interface: input-rich-text-html
@@ -129,32 +126,31 @@ fields:
           - visualaid
       readonly: false
       required: false
-      sort: 6
+      sort: null
       special: null
       translations: null
       validation: null
       validation_message: null
       width: full
     schema:
-      comment: ''
+      name: content
+      table: articles
       data_type: text
       default_value: null
-      foreign_key_column: null
-      foreign_key_table: null
-      generation_expression: null
-      has_auto_increment: false
-      is_generated: false
-      is_nullable: true
-      is_primary_key: false
-      is_unique: false
-      max_length: 65535
-      name: body
+      max_length: null
       numeric_precision: null
       numeric_scale: null
-      table: articles
-    type: text
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
   - collection: articles
     field: date_created
+    type: timestamp
     meta:
       collection: articles
       conditions: null
@@ -163,13 +159,13 @@ fields:
         relative: true
       field: date_created
       group: null
-      hidden: false
+      hidden: true
       interface: datetime
       note: null
       options: null
       readonly: true
       required: false
-      sort: 8
+      sort: null
       special:
         - date-created
       translations: null
@@ -177,25 +173,64 @@ fields:
       validation_message: null
       width: half
     schema:
-      comment: ''
-      data_type: datetime
-      default_value: null
-      foreign_key_column: null
-      foreign_key_table: null
-      generation_expression: null
-      has_auto_increment: false
-      is_generated: false
-      is_nullable: true
-      is_primary_key: false
-      is_unique: false
-      max_length: null
       name: date_created
+      table: articles
+      data_type: timestamp with time zone
+      default_value: null
+      max_length: null
       numeric_precision: null
       numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: articles
+    field: date_updated
+    type: timestamp
+    meta:
+      collection: articles
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: date_updated
       table: articles
-    type: dateTime
+      data_type: timestamp with time zone
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
   - collection: articles
     field: id
+    type: integer
     meta:
       collection: articles
       conditions: null
@@ -209,73 +244,31 @@ fields:
       options: null
       readonly: true
       required: false
-      sort: 1
-      special:
-        - uuid
+      sort: null
+      special: null
       translations: null
       validation: null
       validation_message: null
       width: full
     schema:
-      comment: ''
-      data_type: char
-      default_value: null
-      foreign_key_column: null
-      foreign_key_table: null
-      generation_expression: null
-      has_auto_increment: false
-      is_generated: false
-      is_nullable: false
-      is_primary_key: true
-      is_unique: false
-      max_length: 36
       name: id
-      numeric_precision: null
-      numeric_scale: null
       table: articles
-    type: uuid
-  - collection: articles
-    field: publish_date
-    meta:
-      collection: articles
-      conditions: null
-      display: datetime
-      display_options:
-        format: short
-      field: publish_date
-      group: null
-      hidden: false
-      interface: datetime
-      note: null
-      options: null
-      readonly: false
-      required: false
-      sort: 3
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      comment: ''
-      data_type: datetime
-      default_value: null
-      foreign_key_column: null
-      foreign_key_table: null
-      generation_expression: null
-      has_auto_increment: false
-      is_generated: false
-      is_nullable: true
-      is_primary_key: false
-      is_unique: false
+      data_type: integer
+      default_value: nextval('articles_id_seq'::regclass)
       max_length: null
-      name: publish_date
-      numeric_precision: null
-      numeric_scale: null
-      table: articles
-    type: dateTime
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
   - collection: articles
     field: slug
+    type: string
     meta:
       collection: articles
       conditions: null
@@ -287,38 +280,34 @@ fields:
       interface: input
       note: null
       options:
-        iconRight: insert_link
-        placeholder: Enter a URL safe slug...
         slug: true
-        trim: true
       readonly: false
-      required: true
-      sort: 7
+      required: false
+      sort: null
       special: null
       translations: null
       validation: null
       validation_message: null
       width: full
     schema:
-      comment: ''
-      data_type: varchar
-      default_value: example-slug-here
-      foreign_key_column: null
-      foreign_key_table: null
-      generation_expression: null
-      has_auto_increment: false
-      is_generated: false
-      is_nullable: true
-      is_primary_key: false
-      is_unique: true
-      max_length: 255
       name: slug
+      table: articles
+      data_type: character varying
+      default_value: null
+      max_length: 255
       numeric_precision: null
       numeric_scale: null
-      table: articles
-    type: string
+      is_nullable: true
+      is_unique: true
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
   - collection: articles
     field: status
+    type: string
     meta:
       collection: articles
       conditions: null
@@ -327,16 +316,16 @@ fields:
         choices:
           - text: $t:published
             value: published
-            background: var(--primary)
             foreground: '#FFFFFF'
+            background: var(--primary)
           - text: $t:draft
             value: draft
-            background: '#D3DAE4'
             foreground: '#18222F'
+            background: '#D3DAE4'
           - text: $t:archived
             value: archived
-            background: var(--warning)
             foreground: '#FFFFFF'
+            background: var(--warning)
         showAsDot: true
       field: status
       group: null
@@ -353,72 +342,31 @@ fields:
             value: archived
       readonly: false
       required: false
-      sort: 2
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      comment: ''
-      data_type: varchar
-      default_value: draft
-      foreign_key_column: null
-      foreign_key_table: null
-      generation_expression: null
-      has_auto_increment: false
-      is_generated: false
-      is_nullable: false
-      is_primary_key: false
-      is_unique: false
-      max_length: 255
-      name: status
-      numeric_precision: null
-      numeric_scale: null
-      table: articles
-    type: string
-  - collection: articles
-    field: summary
-    meta:
-      collection: articles
-      conditions: null
-      display: null
-      display_options: null
-      field: summary
-      group: null
-      hidden: false
-      interface: input-multiline
-      note: null
-      options:
-        placeholder: Enter a 1-2 sentence overview...
-      readonly: false
-      required: false
-      sort: 5
+      sort: null
       special: null
       translations: null
       validation: null
       validation_message: null
       width: full
     schema:
-      comment: ''
-      data_type: text
-      default_value: null
-      foreign_key_column: null
-      foreign_key_table: null
-      generation_expression: null
-      has_auto_increment: false
-      is_generated: false
-      is_nullable: true
-      is_primary_key: false
-      is_unique: false
-      max_length: 65535
-      name: summary
+      name: status
+      table: articles
+      data_type: character varying
+      default_value: draft
+      max_length: 255
       numeric_precision: null
       numeric_scale: null
-      table: articles
-    type: text
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
   - collection: articles
     field: title
+    type: string
     meta:
       collection: articles
       conditions: null
@@ -429,38 +377,35 @@ fields:
       hidden: false
       interface: input
       note: null
-      options:
-        iconLeft: title
-        trim: true
+      options: null
       readonly: false
-      required: true
-      sort: 4
+      required: false
+      sort: null
       special: null
       translations: null
       validation: null
       validation_message: null
       width: full
     schema:
-      comment: ''
-      data_type: varchar
-      default_value: null
-      foreign_key_column: null
-      foreign_key_table: null
-      generation_expression: null
-      has_auto_increment: false
-      is_generated: false
-      is_nullable: false
-      is_primary_key: false
-      is_unique: false
-      max_length: 255
       name: title
+      table: articles
+      data_type: character varying
+      default_value: null
+      max_length: 255
       numeric_precision: null
       numeric_scale: null
-      table: articles
-    type: string
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
 relations:
   - collection: articles
     field: author
+    related_collection: directus_users
     meta:
       junction_field: null
       many_collection: articles
@@ -471,12 +416,11 @@ relations:
       one_deselect_action: nullify
       one_field: null
       sort_field: null
-    related_collection: directus_users
     schema:
-      column: author
-      constraint_name: articles_author_foreign
-      foreign_key_column: id
-      foreign_key_table: directus_users
-      on_delete: NO ACTION
-      on_update: NO ACTION
       table: articles
+      column: author
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: articles_author_foreign
+      on_update: NO ACTION
+      on_delete: NO ACTION
