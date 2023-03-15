@@ -6,7 +6,9 @@
    Ice-cool 🧊 Remix + Directus starter template.
 </h3>
 
+<br/>
 <hr/>
+<br/>
 
 <div align="center">
     <a href="https://www.tdsoft.com">
@@ -48,7 +50,7 @@
 ## Deployment
 
 ### Page
-The **Remix** app in this repository comes with an [Architect](https://arc.codes/) adapter, as it's working best for our use cases.
+The Remix app in this repository comes with an [Architect](https://arc.codes/) adapter, as it's working best for our use cases.
 
 Refer to [architect's docs](https://arc.codes/docs/en/reference/cli/deploy) for the a detailed guide on that topic.
 
