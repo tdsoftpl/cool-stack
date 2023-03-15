@@ -13,7 +13,7 @@ const Avatar: React.FC<AvatarProps> = ({nickname, src}) => {
             />
         </div>
     ) : (
-        <div className="inline-flex h-[38px] w-[38px] items-center justify-center rounded-full border-2 border-purple-300 bg-gray-300 sm:h-12 sm:w-12">
+        <div className="inline-flex h-[38px] w-[38px] items-center justify-center rounded-full border-2 border-sky-300 bg-gray-300 sm:h-12 sm:w-12">
             <span className="text-sm font-medium leading-none text-gray-50 sm:text-lg">
                 {generateInitials(nickname)}
             </span>
