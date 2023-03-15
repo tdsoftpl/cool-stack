@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./page/public/images/cool-stack-logo.png" alt="Cool-Stack Logo" />
+<img src="./page/public/images/cool-stack-cover.png" alt="Cool-Stack Cover" />
 </div>
 
 <h3 align="center">
