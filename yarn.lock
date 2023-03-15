@@ -6115,6 +6115,11 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
+"@tdsoft/prettier-config@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@tdsoft/prettier-config/-/prettier-config-1.0.2.tgz#0bfdaeec61fc7f0845c21bb1d7f8dd57b8030c12"
+  integrity sha512-kW8E4es6g8J4uqhBPljK/Su7Do9wthafnpjBEprBWhUvsf+7faNdcLjtn3jCe1eJWQ9RUd0bq8MyNWmybjUDIg==
+
 "@testing-library/cypress@9.0.0":
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/@testing-library/cypress/-/cypress-9.0.0.tgz#3facad49c4654a99bbd138f83f33b415d2d6f097"
