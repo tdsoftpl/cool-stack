@@ -7,7 +7,7 @@
   "types": "./src/index.ts",
   "scripts": {
     "dev": "run-p dev:*",
-    "dev:storybook": "start-storybook -p 6006",
+    "dev:storybook": "start-storybook --quiet -p 6006",
     "build:storybook": "build-storybook",
     "dev:css": "yarn generate:css -- --watch",
     "generate:css": "tailwindcss -i ./src/global.css -o ./src/style.css",
