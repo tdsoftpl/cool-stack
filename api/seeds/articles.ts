@@ -29,7 +29,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             id: 3,
-            status: Status.Draft,
+            status: Status.Published,
             date_created: "2023-01-01T12:00:00",
             date_updated: null,
             author: user.id,
