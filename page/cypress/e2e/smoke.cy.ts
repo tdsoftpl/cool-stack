@@ -6,7 +6,7 @@ describe("💨 Smoke tests", () => {
 
     it("should visit the page and navigate to the first article", () => {
         cy.visit("");
-        cy.contains("a > p", "Read full story").click();
+        cy.contains("a > p", "Read full").click();
         cy.url().should("match", /.*blog/);
     });
 });

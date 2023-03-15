@@ -15,7 +15,7 @@
     "lint": "cross-env TIMING=1 eslint 'app/**/*.{js,jsx,ts,tsx}'",
     "test": "jest",
     "test:e2e:dev": "cypress open",
-    "test:e2e:run": "start-test \"yarn --cwd ../api dev:local\" 8055 dev 3333 \"npx cypress run\""
+    "test:e2e:run": "start-test \"yarn --cwd ../api dev\" 8055 dev 3333 \"npx cypress run\""
   },
   "dependencies": {
     "@cool-stack/api": "*",
