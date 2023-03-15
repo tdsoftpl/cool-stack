@@ -1,0 +1,38 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# artifacts
+build
+
+# misc
+.DS_Store
+*.pem
+**/tsconfig.tsbuildinfo
+
+# debug
+yarn-debug.log*
+yarn-error.log*
+
+# env files
+.env
+.env.*
+!.env.example
+
+# turborepo
+**/.turbo
+
+# log
+**/.log*
+
+# IDE
+.vscode
+.idea
+
+# Storybook
+**/storybook-static
+**/build-storybook.log

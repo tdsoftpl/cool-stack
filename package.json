@@ -1,0 +1,39 @@
+{
+  "name": "cool-stack",
+  "description": "Ice-cool 🧊 Remix + Directus starter template.",
+  "version": "1.0.0",
+  "repository": "https://github.com/tdsoftpl/cool-stack.git",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "api",
+    "packages/*",
+    "page"
+  ],
+  "scripts": {
+    "bootstrap": "yarn && turbo run generate:css && turbo run build",
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{js,ts,tsx,md}\"",
+    "test": "turbo run test --filter=*/page --filter=*/ui --no-cache --only",
+    "graph": "turbo run build --graph"
+  },
+  "devDependencies": {
+    "@tdsoft/prettier-config": "^1.0.2",
+    "prettier": "2.8.1",
+    "turbo": "latest"
+  },
+  "resolutions": {
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.9",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14"
+  },
+  "packageManager": "yarn@1.22.19"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@cool-stack/configs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "files": [
+    "./tsconfig/base.json",
+    "./tsconfig/react-library.json",
+    "./jest/jest-common.js",
+    "./tailwind/tailwind.config.js"
+  ],
+  "peerDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "0.5.9",
+    "tailwindcss": "3.2.4"
+  }
+}
