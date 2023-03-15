@@ -6,6 +6,20 @@
    Ice-cool 🧊 Remix + Directus starter template.
 </h3>
 
+<hr/>
+
+<div align="center">
+    <a href="https://www.tdsoft.com">
+        <img src="./page/public/images/tdsoft-logo.png" alt="TDSOFT Logo" />
+    </a>
+</div>
+
+<h3 align="center">
+   <a href="https://www.tdsoft.com">by TDSOFT.com - Directus Experts</a>
+</h3>
+
+<br/>
+
 ## What's cool in the stack?
 
 - [Remix](https://remix.run/) as a web framework (using [Architect](https://arc.codes/))
@@ -31,14 +45,14 @@
 - For production usage, make sure to fill in your `.env` files in api & page directories. It's best not to version these files in your repository.
 
 
-### Deployment
+## Deployment
 
-#### Page
+### Page
 The **Remix** app in this repository comes with an [Architect](https://arc.codes/) adapter, as it's working best for our use cases.
 
 Refer to [architect's docs](https://arc.codes/docs/en/reference/cli/deploy) for the a detailed guide on that topic.
 
-#### API
+### API
 Refer to [directus docs](https://docs.directus.io/self-hosted/quickstart.html) for a guide on how to deploy a self-hosted directus instance.
 
 We recommend deploying to [AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs.html) using Docker.
