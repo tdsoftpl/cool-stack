@@ -1,8 +1,6 @@
 <div align="center">
-<img src="./page/public/images/cool-stack-cover-image.png" alt="Cool-Stack Cover Image" />
+<img src="./page/public/images/cool-stack-logo.png" alt="Cool-Stack Logo" />
 </div>
-
-<br/>
 
 <h3 align="center">
    Ice-cool 🧊 Remix + Directus starter template.
