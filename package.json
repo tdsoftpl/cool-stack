@@ -16,6 +16,7 @@
     "build": "turbo run build",
     "clean": "turbo run clean",
     "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{js,ts,tsx,md}\"",
     "test": "turbo run test --filter=*/page --filter=*/ui --no-cache --only",
     "graph": "turbo run build --graph"
   },

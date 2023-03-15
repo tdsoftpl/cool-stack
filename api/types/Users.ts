@@ -3,9 +3,5 @@ export interface User {
 }
 
 export function isUser(user: any): user is User {
-    return !!(
-        user &&
-        typeof user === "object" &&
-        typeof user.id === "number"
-    );
+    return !!(user && typeof user === "object" && typeof user.id === "number");
 }
