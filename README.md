@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./page/public/images/cool-stack-cover.png" alt="Cool-Stack Cover" />
+<img src="https://i.imgur.com/J7EdGWq.png" alt="Cool-Stack Cover" />
 </div>
 
 <h3 align="center">
@@ -12,7 +12,7 @@
 
 <div align="center">
     <a href="https://www.tdsoft.com">
-        <img src="./page/public/images/tdsoft-logo.png" alt="TDSOFT Logo" />
+        <img src="https://i.imgur.com/ZbjoePk.png" alt="TDSOFT Logo" />
     </a>
 </div>
 
@@ -42,7 +42,7 @@
 -   [yarn](https://yarnpkg.com/) - at least v1.22.19
 -   [Docker Desktop](https://docs.docker.com/desktop/) - for spinning up your local PosgreSQL database & pgAdmin. If you don't want to run a database on your local machine, you can use the free tier of [Directus cloud services](https://directus.cloud/)
 
-## How to start:
+## How to start
 
 -   Run `yarn run bootstrap` - that will install and build all the project dependencies & packages
 -   Run `yarn run dev` - turborepo will spin up all 'dev' scripts across the monorepo. You can also run each project's dev scripts separately
@@ -66,7 +66,7 @@ We recommend deploying to [AWS Elastic Beanstalk](https://docs.aws.amazon.com/el
 <hr/>
 
 <h3 align="center">
-   <a href="https://directus.io/blog/imt-01-building-a-sports-betting-platform-with-directus/">Watch episode of "Directus I-MADE-IT" podcast</a>
+   <a href="https://directus.io/blog/imt-01-building-a-sports-betting-platform-with-directus/">Watch episode of "Directus I-MADE-THIS" podcast</a>
 </h3>
 
 <div align="center">
@@ -74,6 +74,8 @@ We recommend deploying to [AWS Elastic Beanstalk](https://docs.aws.amazon.com/el
         <img src="https://i.imgur.com/MwsnLuD.png" alt="Directus I-MADE-THIS podcast cover" />
     </a>
 </div>
+
+<hr/>
 
 ## Built with cool-stack
 
