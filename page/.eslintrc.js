@@ -1,5 +1,5 @@
 module.exports = {
-    plugins: ["prettier"],
+    plugins: ["prettier", "@typescript-eslint"],
     extends: [
         "eslint:recommended",
         "@remix-run/eslint-config",
