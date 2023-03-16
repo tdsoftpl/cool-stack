@@ -7,22 +7,29 @@
 </h3>
 
 <br/>
-<hr/>
-<br/>
+<!-- <hr/> -->
 
 <div align="center">
     <a href="https://www.tdsoft.com">
-        <img src="https://i.imgur.com/ZbjoePk.png" alt="TDSOFT Logo" />
+      by  <img width="80" src="https://imgur.com/8KJixsV.png" alt="TDSOFT Logo" /> - Directus Experts
     </a>
 </div>
-
-<h3 align="center">
-   <a href="https://www.tdsoft.com">by TDSOFT.com - Directus Experts</a>
-</h3>
-
+<hr/>
 <br/>
 
-## What's cool in the stack? ✨
+## Overview 🔭
+
+🧊 _cool-stack_ 🧊 is a modern stack for building web applications. It's built on top of two powerful tools:
+
+-   💿 Remix - blazingly fast, powerful React.js framework that is used for server-side rendering, allowing you to focus on creating beautiful user interfaces.
+
+-   🐰 Directus - an instant REST and GraphQL API that seamlessly integrates on top of a Postgres SQL database. Directus has an easy to work with SDK, that blends perfectly with Remix.
+
+<h4 align="center"> 
+   <b> ❄️ Get <i>cool-stack</i> today, before your time melts away ❄️ </b> 
+</h4>
+
+## What's _cool_ in the stack? ✨
 
 -   [Remix](https://remix.run/) as a web framework (using [Architect](https://arc.codes/))
 -   Content API and dashboard powered by [Directus](https://directus.io/)
