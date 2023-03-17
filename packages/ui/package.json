@@ -23,8 +23,8 @@
     "react": "18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.19.6",
-    "@babel/plugin-transform-modules-commonjs": "7.19.6",
+    "@babel/core": "7.21.3",
+    "@babel/plugin-transform-modules-commonjs": "7.21.2",
     "@cool-stack/configs": "*",
     "@storybook/addon-a11y": "6.5.16",
     "@storybook/addon-actions": "6.5.16",
