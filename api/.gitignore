@@ -2,3 +2,6 @@
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# Directus by default stores files locally, to avoid uploading them to repository we have to ignore uploads directory
+uploads/
