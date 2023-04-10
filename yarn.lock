@@ -4076,10 +4076,10 @@
     knex "2.4.2"
     knex-schema-inspector "3.0.1"
 
-"@directus/sdk@10.3.1":
-  version "10.3.1"
-  resolved "https://registry.yarnpkg.com/@directus/sdk/-/sdk-10.3.1.tgz#094db8e994073b4152d394a0e693cadf2a5da709"
-  integrity sha512-+FUs1kQ27dmrHbAxO+FmCmmAHZrzyyZn+cXZMCtixkeBD8KYBFM7sUKtesQskSmsp5wUksrq2L9Cm+Z93G/ONg==
+"@directus/sdk@10.3.3":
+  version "10.3.3"
+  resolved "https://registry.yarnpkg.com/@directus/sdk/-/sdk-10.3.3.tgz#c78e2dd3babb2c1d5c1ef1ac41e5189e3f6ab8b4"
+  integrity sha512-58gw+QjkuIr0lJFRx5HwSp1ewAf7rjfV++eJqAmC13p7vif9wfJEcWcJwqXstYdvtJVUg+nB4O/CE0OBEtp5HQ==
   dependencies:
     axios "^0.27.2"
 
