@@ -4072,17 +4072,17 @@
     "@devtools-ds/themes" "^1.2.1"
     clsx "1.1.0"
 
-"@directus/app@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/app/-/app-9.23.3.tgz#c6f290f095b792ab915ef8c794ef454e1e52fda1"
-  integrity sha512-T9LPpV6iSFf1RwPVh36cnBY+uo3RzFseKCSkGvQgm5+UomO/upJuMrdR9Bc8iocCXUPn9V+cf2KkdYhHoaFQmg==
+"@directus/app@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/app/-/app-9.24.0.tgz#945841bc8a2cd72eac08c4f5f93b127c714fcef1"
+  integrity sha512-51+sxlWNITr4tGWni9CGseC0UsQ/Jzg9HqL2wpCl4q7bEPcbuVTfAphRKna7n5fsKWV5CtmtBv9dU7UbUqOCFA==
 
-"@directus/extensions-sdk@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/extensions-sdk/-/extensions-sdk-9.23.3.tgz#e0219716acade3e2a39219cec47c6f23b625a593"
-  integrity sha512-wp0hKkslysscUmm573NfSwoT4ey4lPDTBuTPbC/2VSmOWs0jFPq2THLYpJqItTrKc6I4mkp42M5u4nGMy8B4LA==
+"@directus/extensions-sdk@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/extensions-sdk/-/extensions-sdk-9.24.0.tgz#71bd5d545c67121694d17d67a9be38ef37db0c47"
+  integrity sha512-Z7d/PqIrDTnxLddW5C3AjoVIFleTf6GGfhTYkJBkkh9QUJlQQEi9TDON4XRJrcKBnnh4mWTeSH+ww9TjLbpWIA==
   dependencies:
-    "@directus/shared" "9.23.3"
+    "@directus/shared" "9.24.0"
     "@rollup/plugin-commonjs" "23.0.4"
     "@rollup/plugin-json" "6.0.0"
     "@rollup/plugin-node-resolve" "15.0.1"
@@ -4107,10 +4107,10 @@
   resolved "https://registry.yarnpkg.com/@directus/format-title/-/format-title-9.15.0.tgz#18e6038c79118302f62da48f53f8c120c493873f"
   integrity sha512-2korjLjPrVA3kZlMiGWIJwWdiqwK5t9d84cMriUW4HIWDIvexjHRpOMX0Ju/89RqdXwIYbR19xqyTlK2GKQbIw==
 
-"@directus/schema@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/schema/-/schema-9.23.3.tgz#3dedc778b10c3272912a170fedbaaf6483648ca1"
-  integrity sha512-Bbir0ng5cK6Tgp5t4c5fMChX2f5EL3WPsOIy9OXzVNQJjJmCcsIqY1VxJMehBsmm85Adhg+SJkqGNsZ0Hbm4+Q==
+"@directus/schema@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/schema/-/schema-9.24.0.tgz#9d01b50fd6c26670a36ec79165495b3931d6208a"
+  integrity sha512-SHiL1G0sIeUmmW1sljWvcdVttNgDkDTshoVIFCLEkqJJ7BCev/rdGikXSvH3gCMYAx33ufQ39dHL+ksoZqDZ1w==
   dependencies:
     knex "2.4.2"
     knex-schema-inspector "3.0.1"
@@ -4122,10 +4122,10 @@
   dependencies:
     axios "^0.27.2"
 
-"@directus/shared@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/shared/-/shared-9.23.3.tgz#8983d294d7b840eff98fc7fa57a06d9f4e195f0d"
-  integrity sha512-ytqH0qg2+QrgdWw/3kiAphgZ1MDG3/XzxqR4hGeCz6F2YZzu8ydlQkEddADQsFIC5YkAtnpOOWSBOAyy37cz5A==
+"@directus/shared@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/shared/-/shared-9.24.0.tgz#10be6d1ed0aed476ef7de67a798988da5169c7bc"
+  integrity sha512-NMLhwi4K5URm312DKvCg1tn5DiUaK8adteu1oWK6IvNazYkdFGMcjqErSpfD13U77Hk/senzK5BXBofXH0n6MQ==
   dependencies:
     axios "1.3.4"
     date-fns "2.29.3"
@@ -4144,72 +4144,72 @@
     vue-router "4.1.6"
     zod "3.21.4"
 
-"@directus/specs@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/specs/-/specs-9.23.3.tgz#f90e0f4af01eb172eb551793ea534a24ff78ce9c"
-  integrity sha512-WyjLDCIDejpREK/9DEJhU5nRgRvoZxyI1aCr44scLvJpcsrrtrXM2wJ+fQKx5C/uEveLMmYTwE16WuUSE0HWYw==
+"@directus/specs@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/specs/-/specs-9.24.0.tgz#e5016d23ffd95945c75232eda89f39c5b493c974"
+  integrity sha512-JIruSgwMzeRcK+lYBpNb/gHoNIAlLsW+vfotkVA1hggFwBfCrWpBftzo9MX0KQ2EYCatmhqjr5IQcDKC0jfPcg==
   dependencies:
     openapi3-ts "3.2.0"
 
-"@directus/storage-driver-azure@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/storage-driver-azure/-/storage-driver-azure-9.23.3.tgz#636434d60745594e236637f3c7c249e9bbabab3a"
-  integrity sha512-3z8XLoUxapLm+V4k/3JjBEVc4nv9uO989oOtgvkzXTiDuox3Aah1fwPYNsMcYWVSlF43GaHo8wTHfpzfyymGbw==
+"@directus/storage-driver-azure@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/storage-driver-azure/-/storage-driver-azure-9.24.0.tgz#696be55844d586078ba728e4602b10578ac6bf58"
+  integrity sha512-8i5if/P0WDUO1voGWQZcY4nRR+N5UR/luSPDbupf43zUlQtJtVv04ZgXPTy3Aff6A1z5hnixpg4uENa5ODBaHw==
   dependencies:
     "@azure/storage-blob" "12.13.0"
-    "@directus/storage" "9.23.3"
-    "@directus/utils" "9.23.3"
+    "@directus/storage" "9.24.0"
+    "@directus/utils" "9.24.0"
 
-"@directus/storage-driver-cloudinary@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/storage-driver-cloudinary/-/storage-driver-cloudinary-9.23.3.tgz#c4fade0e9da476e8b8290d6cf4816d5ce91853d8"
-  integrity sha512-dUY8pJ+Foye7HW3TBuRcgjdyZHC/BpLCYrnMafuJgY8z+O7lLw7JbmI8d04Tbm/Gr0qwJXI4eNRZundhFLFC8Q==
+"@directus/storage-driver-cloudinary@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/storage-driver-cloudinary/-/storage-driver-cloudinary-9.24.0.tgz#716db5aeb897bf92ba610095e3245e86f6da9751"
+  integrity sha512-5ZRYTOHcd9lw08bxQOlErnATba9gNu6SChC6Gv4vOjS2HN/epkIIyHXZjv4gD8NP/3Y3Nd1y85lolQMgVPS5/g==
   dependencies:
-    "@directus/storage" "9.23.3"
-    "@directus/utils" "9.23.3"
+    "@directus/storage" "9.24.0"
+    "@directus/utils" "9.24.0"
     p-queue "7.3.4"
     undici "5.21.0"
 
-"@directus/storage-driver-gcs@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/storage-driver-gcs/-/storage-driver-gcs-9.23.3.tgz#545a60012650891216378778c314040dc1ea90cf"
-  integrity sha512-sVrMSAQSu4ip9sPrzsjyheI4g4sb1zyqXH/rl7EWh/i6lc+nbN6nJOLZXVldBjp0izZu6V9BetrHh2b2+BUl9A==
+"@directus/storage-driver-gcs@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/storage-driver-gcs/-/storage-driver-gcs-9.24.0.tgz#bc094ada62a526cda75d6ff9b3b2f1b726cb194f"
+  integrity sha512-rPDpqWAh6zlRQaK7zO0ejBtYGLlEh4Ba69Dn5/Ap1ZHB2nOFjXLfY/oW7k7ofua+A+VSn30R6eY16LFbCXvU2w==
   dependencies:
-    "@directus/storage" "9.23.3"
-    "@directus/utils" "9.23.3"
+    "@directus/storage" "9.24.0"
+    "@directus/utils" "9.24.0"
     "@google-cloud/storage" "6.9.4"
 
-"@directus/storage-driver-local@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/storage-driver-local/-/storage-driver-local-9.23.3.tgz#8a51b59e016dde8b0d77f688b2b779a3322c12ec"
-  integrity sha512-hX6BMEQ/FCa/sfM7G7mubfzAexaSUN+yjqH9T0fvLKNiocU2bRQPwwD2Q99AQ4RdyBCTe8Rzp0nvVdL9eHLV7Q==
+"@directus/storage-driver-local@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/storage-driver-local/-/storage-driver-local-9.24.0.tgz#10693f5a383fe8e37117057f9ff48f1fc2c1309e"
+  integrity sha512-C8YTFpvLVSWcYkBra6Mivq0Jb3Fzu3pDbMP1Nq0TBTyoEgGUHV4vnTcng7NxXjW/ndyik2Cz1QoRXDGOxEpRDA==
   dependencies:
-    "@directus/storage" "9.23.3"
-    "@directus/utils" "9.23.3"
+    "@directus/storage" "9.24.0"
+    "@directus/utils" "9.24.0"
 
-"@directus/storage-driver-s3@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/storage-driver-s3/-/storage-driver-s3-9.23.3.tgz#a5df42ff44db1db2752dcb754e2df50baecaa48c"
-  integrity sha512-GRa74iU+PoEkdNH14oeXsd/jRleatepv+KFXXom1WaePl3I75mIW9xPjP04hySy7TPamrLwetcW8J3F2dAoGeg==
+"@directus/storage-driver-s3@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/storage-driver-s3/-/storage-driver-s3-9.24.0.tgz#fd038d7799175c7c93464b5c3178f00f043a61b6"
+  integrity sha512-ZPMCXSyH3NP7IB+1jndqCJnChWbTkK6Aa1jed1JAKlp1QrWDmrVxxN61jgAvCJee3GYIZxzSpsdjOJsOas/fhg==
   dependencies:
     "@aws-sdk/abort-controller" "3.292.0"
     "@aws-sdk/client-s3" "3.292.0"
     "@aws-sdk/lib-storage" "3.292.0"
-    "@directus/storage" "9.23.3"
-    "@directus/utils" "9.23.3"
+    "@directus/storage" "9.24.0"
+    "@directus/utils" "9.24.0"
 
-"@directus/storage@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/storage/-/storage-9.23.3.tgz#3bc3b894eea29ff7bbefe1717a05eaefb1fd672f"
-  integrity sha512-dfeDM7pe7pFRDOzEr7TqDBcXLgSzWf9Cow4DfDggWdCmPp6QjoDfIj9SMS2IDs0E6TSjybWhuzdBEUu5Je3zMw==
+"@directus/storage@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/storage/-/storage-9.24.0.tgz#df3edc0951f29382ef73db9217db035367b21a78"
+  integrity sha512-VPpyPK4qiXttZmS8vOP4kUojOj8dvgxZIDp6XBckVw8ROMLEmfCLzCZpV567KHUUKSqjbW0LTglAwkSWLSypXw==
 
-"@directus/utils@9.23.3":
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/@directus/utils/-/utils-9.23.3.tgz#78bbb77755797f4206a320be93c0724701dd4475"
-  integrity sha512-hfAVkOjPJwlxtXmoia1+BUVDUAbtLJEsmpbwyxcYG8A/Paiet6q39u8sktwUXKAZjc+kBX2EUUBN/BTV7lgh+Q==
+"@directus/utils@9.24.0":
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/@directus/utils/-/utils-9.24.0.tgz#4137e8c608a3c54e80731ab1571ec4ffeae2be1d"
+  integrity sha512-t19hmpkjhpTiNkhgZa3ZaBdf3+Lx6rjhMA7mZQAudLY1MilPTLZMCDY/Hlw5hW3I8leUgqovzDT95rVU9EOv9A==
   dependencies:
-    "@directus/shared" "9.23.3"
-    "@directus/storage" "9.23.3"
+    "@directus/shared" "9.24.0"
+    "@directus/storage" "9.24.0"
 
 "@discoveryjs/json-ext@^0.5.3":
   version "0.5.7"
@@ -10665,26 +10665,26 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-directus@9.23.3:
-  version "9.23.3"
-  resolved "https://registry.yarnpkg.com/directus/-/directus-9.23.3.tgz#4a78f1ce3a12183a08e3768f1aa91e5e265c52b8"
-  integrity sha512-MOhK/3BOJcdPKgwPN4Fo3BoenhpgUZS2TaH/eWkqFPGCJ83qnRAntCD6dCGXSLenmz0/wYkU9UNT7yMFWjCZ/w==
+directus@9.24.0:
+  version "9.24.0"
+  resolved "https://registry.yarnpkg.com/directus/-/directus-9.24.0.tgz#84fecf93caabb624fcab50cb1d587e18c4ec739a"
+  integrity sha512-pRFWd2XDNCUWMqWy9R21vioQ1VGLXyA91SEVuATZB6lDdr7Me8e8F9SYS20uce98cz4PYPiSOgZk1bmZWl1Fzw==
   dependencies:
     "@authenio/samlify-node-xmllint" "2.0.0"
     "@aws-sdk/client-ses" "3.292.0"
-    "@directus/app" "9.23.3"
-    "@directus/extensions-sdk" "9.23.3"
+    "@directus/app" "9.24.0"
+    "@directus/extensions-sdk" "9.24.0"
     "@directus/format-title" "9.15.0"
-    "@directus/schema" "9.23.3"
-    "@directus/shared" "9.23.3"
-    "@directus/specs" "9.23.3"
-    "@directus/storage" "9.23.3"
-    "@directus/storage-driver-azure" "9.23.3"
-    "@directus/storage-driver-cloudinary" "9.23.3"
-    "@directus/storage-driver-gcs" "9.23.3"
-    "@directus/storage-driver-local" "9.23.3"
-    "@directus/storage-driver-s3" "9.23.3"
-    "@directus/utils" "9.23.3"
+    "@directus/schema" "9.24.0"
+    "@directus/shared" "9.24.0"
+    "@directus/specs" "9.24.0"
+    "@directus/storage" "9.24.0"
+    "@directus/storage-driver-azure" "9.24.0"
+    "@directus/storage-driver-cloudinary" "9.24.0"
+    "@directus/storage-driver-gcs" "9.24.0"
+    "@directus/storage-driver-local" "9.24.0"
+    "@directus/storage-driver-s3" "9.24.0"
+    "@directus/utils" "9.24.0"
     "@godaddy/terminus" "4.11.2"
     "@rollup/plugin-alias" "4.0.3"
     "@rollup/plugin-virtual" "3.0.1"

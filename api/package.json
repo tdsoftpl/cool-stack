@@ -15,7 +15,7 @@
     "lint": "cross-env TIMING=1 eslint 'types/**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
-    "directus": "9.23.3",
+    "directus": "9.24.0",
     "pg": "8.10.0"
   },
   "devDependencies": {
