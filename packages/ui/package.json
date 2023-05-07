@@ -44,7 +44,7 @@
     "babel-jest": "29.5.0",
     "babel-loader": "9.1.2",
     "concurrently": "7.6.0",
-    "eslint": "8.38.0",
+    "eslint": "8.40.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jest-dom": "4.0.3",
