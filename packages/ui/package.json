@@ -54,7 +54,7 @@
     "eslint-plugin-unicorn": "45.0.2",
     "jest": "29.5.0",
     "jest-environment-jsdom": "29.5.0",
-    "postcss": "8.4.23",
+    "postcss": "8.4.26",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "0.2.8",
     "storybook-addon-designs": "6.3.1",
