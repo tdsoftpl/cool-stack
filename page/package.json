@@ -45,7 +45,7 @@
     "aws-sdk": "2.1415.0",
     "concurrently": "7.6.0",
     "cypress": "12.17.1",
-    "eslint": "8.40.0",
+    "eslint": "8.45.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jest-dom": "4.0.3",
