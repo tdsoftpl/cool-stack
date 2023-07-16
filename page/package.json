@@ -21,7 +21,7 @@
     "@cool-stack/api": "*",
     "@cool-stack/configs": "*",
     "@cool-stack/ui": "*",
-    "@directus/sdk": "10.3.3",
+    "@directus/sdk": "10.3.5",
     "@remix-run/architect": "1.16.0",
     "@remix-run/node": "1.16.0",
     "@remix-run/react": "1.16.0",
