@@ -3837,10 +3837,10 @@
   dependencies:
     knex "2.4.2"
 
-"@directus/sdk@10.3.3":
-  version "10.3.3"
-  resolved "https://registry.yarnpkg.com/@directus/sdk/-/sdk-10.3.3.tgz#c78e2dd3babb2c1d5c1ef1ac41e5189e3f6ab8b4"
-  integrity sha512-58gw+QjkuIr0lJFRx5HwSp1ewAf7rjfV++eJqAmC13p7vif9wfJEcWcJwqXstYdvtJVUg+nB4O/CE0OBEtp5HQ==
+"@directus/sdk@10.3.5":
+  version "10.3.5"
+  resolved "https://registry.yarnpkg.com/@directus/sdk/-/sdk-10.3.5.tgz#2b61c00fd487db7d95e818049c3d5587e8fba886"
+  integrity sha512-ZLn85mfy3MWyIhTSrw46Eka1XdjoRIugZXNQy9w+zSEFm3hAzgB74N1qH7zARj9dGCWx+bAAno3n29Y2NqQv/A==
   dependencies:
     axios "^0.27.2"
 
