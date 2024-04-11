@@ -38,7 +38,7 @@
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@types/jest": "29.5.3",
-    "@types/react": "18.2.76",
+    "@types/react": "18.2.77",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "babel-jest": "29.6.1",
