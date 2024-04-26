@@ -35,5 +35,5 @@
     "npm": ">=7.0.0",
     "node": ">=14"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.22"
 }
