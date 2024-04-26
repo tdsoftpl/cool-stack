@@ -35,7 +35,7 @@
     "@remix-run/dev": "1.18.1",
     "@remix-run/eslint-config": "1.18.1",
     "@testing-library/cypress": "9.0.0",
-    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "13.4.0",
     "@types/jest": "29.5.12",
     "@types/react": "18.0.26",
