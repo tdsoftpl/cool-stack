@@ -42,7 +42,7 @@
     "@types/react-dom": "18.0.9",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
-    "aws-sdk": "2.1607.0",
+    "aws-sdk": "2.1608.0",
     "concurrently": "7.6.0",
     "cypress": "12.17.4",
     "eslint": "8.45.0",
