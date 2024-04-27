@@ -43,7 +43,7 @@
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "aws-sdk": "2.1608.0",
-    "concurrently": "7.6.0",
+    "concurrently": "8.2.2",
     "cypress": "12.17.4",
     "eslint": "8.57.0",
     "eslint-config-prettier": "8.10.0",
