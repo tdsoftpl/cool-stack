@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "directus": "9.26.0",
-    "pg": "8.11.5"
+    "pg": "8.12.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.62.0",
