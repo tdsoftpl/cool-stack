@@ -8873,14 +8873,11 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@tailwindcss/typography@0.5.15":
-  version "0.5.15"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.5.15.tgz#007ab9870c86082a1c76e5b3feda9392c7c8d648"
-  integrity sha512-AqhlCXl+8grUz8uqExv5OTtgpjuVIwFTSXTrh8y9/pw6q2ek7fJ+Y8ZEVw7EB2DCcuCOtEjf9w3+J3rzts01uA==
+"@tailwindcss/typography@0.5.19":
+  version "0.5.19"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.5.19.tgz#ecb734af2569681eb40932f09f60c2848b909456"
+  integrity sha512-w31dd8HOx3k9vPtcQh5QHP9GwKcgbMp87j58qi6xgiBnFFtKEAgCWnDw4qUT8aHwkCp8bKvb/KGKWWHedP0AAg==
   dependencies:
-    lodash.castarray "^4.4.0"
-    lodash.isplainobject "^4.0.6"
-    lodash.merge "^4.6.2"
     postcss-selector-parser "6.0.10"
 
 "@tdsoft/prettier-config@^1.0.2":
@@ -18778,11 +18775,6 @@ lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==
-
-lodash.castarray@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.castarray/-/lodash.castarray-4.4.0.tgz#c02513515e309daddd4c24c60cfddcf5976d9115"
-  integrity sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
