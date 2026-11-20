@@ -14452,6 +14452,13 @@ eslint-plugin-jest-dom@4.0.3, eslint-plugin-jest-dom@^4.0.3:
     "@testing-library/dom" "^8.11.1"
     requireindex "^1.2.0"
 
+eslint-plugin-jest-dom@5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-5.11.0.tgz#c3509c80a6106f42a9100b7f313ca3f166968e39"
+  integrity sha512-w6ejV2uyb9vLpII6ga8J62IKjHIbU68V4cBWkqNylTXxAPn5uAJ71OlLJhZ9kJF2UJZtAQSxcgH/SR0HjxnHtg==
+  dependencies:
+    requireindex "^1.2.0"
+
 eslint-plugin-jest@^26.9.0:
   version "26.9.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-26.9.0.tgz#7931c31000b1c19e57dbfb71bbf71b817d1bf949"
